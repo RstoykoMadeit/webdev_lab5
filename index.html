@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Form</title>
-</html>
+</head>
 <body>
 	<h1>Volunteer Form</h1>
 	<form action="http://bloomingdale.sat.iit.edu/kriedan/lab3formscript.php" method="post">
@@ -14,12 +14,12 @@
 			<div><label>last name: <input size="100" type="text" name="last_name_field"></label></div>
 			<div><label>phone: <input size="100" type="text" name="phone_field"></label></div>
 			<div><label>email: <input size="100" type="text" name="email_field"></label></div>
-			<div>gender: </div>
+			<div>Gender: </div>
 			<div>
-				<label>male <input type="radio" name="gender_field" value="male"></label>
-				<label>female <input type="radio" name="gender_field" value="female"></label>
+				<label>Male <input type="radio" name="gender_field" value="male"></label>
+				<label>Female <input type="radio" name="gender_field" value="female"></label>
 			</div>
-			<div>age: </div>
+			<div>Age: </div>
 			<select name="age_field">
 				<option>under 18</option>
 				<option>over 18</option>
@@ -27,7 +27,7 @@
 		</fieldset>
 		<fieldset>
 			<legend>My Availability</legend>
-			<h3>Days Available</h3>
+			<h3>Days Available:</h3>
 			<div>
 				<div><label>Sunday <input type="checkbox" name="available_field[]" value="sunday"></label></div>
 				<div><label>Monday <input type="checkbox" name="available_field[]" value="monday"></label></div>
@@ -40,6 +40,7 @@
 				<textarea name="comments_field"></textarea>
 			</div>
 		</fieldset>
+		<input type="hidden" name="hidden_field" value="rstoyko">
 		<input type="submit">
 	</form>
 </body>
